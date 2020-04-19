@@ -1,0 +1,199 @@
+html,body{
+    background-color: #ececf3;
+}
+// 网页主体盒子
+.main_body{
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    // 顶部搜索父盒子
+    .top_nav{
+        width: 100%;
+        height: 44px;
+        background-color: #f9d687;
+        position: fixed;
+        left: 50%;
+        top: 0;
+        padding: 0 8px;
+        box-sizing: border-box;
+        display: flex;
+        z-index: 10;
+        max-width: 750px;
+        min-width: 320px;
+        transform: translate(-50%);
+    }
+
+    .search{
+        flex: 1;
+        input{
+            width: 100%;
+            margin-top: 7px;
+            border-radius: 15px;
+            height:30px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+    }
+
+    .user{
+        width: 50px;
+        height: 44px;
+        text-align:center;
+        a {
+            color: #fff;
+        }
+        span{
+            width: 41px;
+            height: 20px;
+            display: block;
+            background: url(../img/home-common-sprite2x@v7.15.png) no-repeat 0 -37px;
+            background-size:  auto 123px;
+            margin-left: 12px;
+            margin-top: 5px;
+        }
+    }
+    //中间导航
+    .main_nav{
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+            border-radius: 0 0 40px 40px;
+        }
+
+        .navs{
+            width:100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+            position: absolute;
+            left:0;
+            bottom: -10px;
+            ul{
+                width:100%;
+                display: flex;
+                background-color: #fff;;
+                border-radius: 5px;
+                li{
+                    flex:1;
+                    text-align: center;
+                    list-style: none;
+                    span{
+                        width: 40px;
+                        height: 46px;
+                        display: block;
+                        background: url(../img/home-fivemain-sprite2x@v7.15.png) no-repeat 0 0;
+                        background-size: 40px auto;
+                        margin: 0 auto;
+                    }
+                }
+                li:nth-child(2) span{
+                    background-position: 0 -39px;
+                }
+                li:nth-child(3) span{
+                    background-position: 0 -80px;
+                }
+                li:nth-child(4) span{
+                    background-position: 0 -119px;
+                }
+                li:nth-child(5) span{
+                    background-position: 0 -160px;
+                }
+            }
+            
+    
+        }
+        
+    }
+    //主体内容
+    .content{
+        width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+        margin-top: 25px;
+       
+        .item{
+            display: flex;
+            width:100%;
+            color: #fff;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-weight: 700;
+            &:nth-child(1){
+                background: linear-gradient(to right, #fa5956, #fb8650 54%);
+            }
+            &:nth-child(2){
+                background: linear-gradient(to right, #4b8fed, #53bced);
+            }
+            &:nth-child(3){
+                background: linear-gradient(to right, #34c2aa, #6cd557);
+            }
+            .left{
+                flex: 3;
+                border-right:1px solid #fff;
+            }
+            .middle{
+                flex:2;
+                border-right: 1px solid #fff;
+            }
+            .right{
+                flex: 5;
+            }
+        }
+    }
+
+    //图片展示
+    .img_show{
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        
+        background-color: #fff;
+        .title{
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+        .sell_log{
+            width: 56px;
+            height: 18px;
+            display: block;
+            float: left;
+            background: url(../img/un_home_text.png) no-repeat 0 0;
+            background-size: 79px auto;
+            margin-top:12px;
+        }
+        .more{
+            float: right;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            li{
+                flex: 1;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // 底部
+    .footer{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        border-top: 1px solid #ccc;
+        ul{
+            width: 100%;
+            display: flex;
+            background-color: #fff;
+            li{
+                
+                flex: 1;
+                text-align: center;
+            }
+        }
+
+    }
+}
